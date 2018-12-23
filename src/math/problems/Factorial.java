@@ -18,7 +18,7 @@ public class Factorial {
             result=result*i;}
 
             System.out.println("The Factorial of 5 is :" +result);
-          System.out.println("The Factorial of 5 is :" +factorial(num));
+            System.out.println("The Factorial of 5 is :" +factorial(num));
     }
 
     public static int factorial(int num){
