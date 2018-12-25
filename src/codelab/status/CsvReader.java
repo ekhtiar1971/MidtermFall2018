@@ -1,5 +1,7 @@
 package codelab.status;
 
+import parser.Student;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -38,6 +40,7 @@ public class CsvReader {
             e.printStackTrace();
         }
         Collections.sort(roster);
+
         for(Trainee student:roster) {
             if (student.getNumberOfExercisesSolved()>=600) {
                 System.out.print("You did pretty good-->");
@@ -62,6 +65,15 @@ public class CsvReader {
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
         }
+
+        int size=roster.size();
+        int total=0;
+
+        for(Trainee st:roster){
+            total+=st.getNumberOfExercisesSolved();
+        }
+        System.out.println("The avg number is " + total/size);
+
 
     }
 
