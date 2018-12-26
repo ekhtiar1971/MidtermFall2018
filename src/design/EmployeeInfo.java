@@ -50,6 +50,9 @@ public class EmployeeInfo extends EmployeePr{
 		this.deptName=deptName;
 		this.salary=salary;
 	}
+	public void emplInf(){
+		System.out.println(name +deptName+salary);
+	}
 
 
 
@@ -58,11 +61,16 @@ public class EmployeeInfo extends EmployeePr{
 	public void setSalary(int salary) {
 
 		this.salary = salary;
+
+
 	}
-	public int getSalary() {
+	public int emId(int employeeId) {
 
-		return salary;
+		return employeeId;
+	}
 
+	public double gr(double grade){
+		return grade;
 	}
 
 

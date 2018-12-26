@@ -21,7 +21,14 @@ public class FortuneEmployee {
 		emp1.assignDepartment("IT");
 		emp1.dept2="HR";
 		emp1.employeeId=102;
-		emp1.getSalary();
+		emp1.emplInf();
+
+		int e3=emp1.emId(303);
+		System.out.println(e3);
+
+
+		double g4=emp1.gr(4.5);
+		System.out.println(g4);
 
 
 
