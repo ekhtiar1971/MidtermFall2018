@@ -55,16 +55,12 @@ public class EmployeeInfo extends EmployeePr{
 	}
 
 
-
-
-
 	public void setSalary(int salary) {
 
 		this.salary = salary;
-
-
 	}
-	public int emId(int employeeId) {
+
+		public int emId(int employeeId) {
 
 		return employeeId;
 	}
